@@ -42,7 +42,7 @@ export default MyApp;
 &emsp; 5- modules folder
 - In your root directory add jsconfig.json file
 - Add the following code to your jsconfig.json file: <br>
-` { <br>`
+` { `<br>
     `"compilerOptions": { `<br>
       `"baseUrl": ".", `<br>
       `"paths": { `<br>
