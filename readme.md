@@ -46,10 +46,10 @@ export default MyApp;
     `"compilerOptions": { `<br>
       `"baseUrl": ".", `<br>
       `"paths": { `<br>
-        `"@/components/`*`": ["components/`*`"], `<br>
-        `"@/styles/`*`": ["styles/`*`"], `<br>
-        `"@/actions/`*`": ["actions/`*`"], `<br>
-        `"@/helpers/`*`": ["helpers/`*`"] `<br>
+        `"@/components/*": ["components/*"], `<br>
+        `"@/styles/*": ["styles/*"], `<br>
+        `"@/actions/*": ["actions/*"], `<br>
+        `"@/helpers/*": ["helpers/*"] `<br>
       `} `<br>
     `} `<br>
 `}` 
