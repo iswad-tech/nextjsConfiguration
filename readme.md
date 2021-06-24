@@ -21,13 +21,13 @@ export default MyApp;
 `class MyDocument extends Document { `<br>
   `render() { `<br>
     `return ( `<br>
-      `&lt;Html lang="en-us"&gt; `<br>
-        `&lt;Head /&gt; `<br>
-        `&lt;body&gt; `<br>
-          `&lt;Main /&gt; `<br>
-          `&lt;NextScript /&gt; `<br>
-        `&lt;/body&gt; `<br>
-      `&lt;/Html&gt; `<br>
+      `<Html lang="en-us">`<br>
+        `<Head />`<br>
+        `<body>`<br>
+          `<Main />`<br>
+          `<NextScript />`<br>
+        `</body>`<br>
+      `</Html>`<br>
     `); `<br>
   `} `<br>
 `} `<br>
