@@ -99,6 +99,6 @@ next.config.js <br>
 - Then everything is ready to make your first push in github: <br>
 `git status` <br>
 `git add .` <br>
-`git remote add origin github_url` <br>
+`git remote add origin GITHUB_URL` <br>
 `git commit -m "Initial configuration has been set." `<br>
 `git push origin master `<br>
