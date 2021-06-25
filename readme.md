@@ -118,6 +118,7 @@ Sample: `<div className="row--12 row--sm--10 row--md--8 row--lg--6 bg-blue box-o
 
 **14. Mobile Menu Bar** <br>
 `menu-mob-icon` --> Mobile Menu Icon <br>
+`menu-mob-closed-icon` --> Closing icon <br>
 `menu-mob-hr` <br>
 `menu-mob-hr-active` <br>
 

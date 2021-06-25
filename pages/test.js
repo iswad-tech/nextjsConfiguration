@@ -18,9 +18,12 @@ const Test = () => {
   }, []);
 
   const menuToggleHandler = () => {
-    const menuList = document.querySelector("#menu-mob-list")
-    menuList.classList.toggle("menu-mob-hr-active")
-  }
+    const menuList = document.querySelector("#menu-mob-list");
+    const menuIcon = document.querySelector("#menu-mob-icon");
+    menuList.classList.toggle("menu-mob-hr-active");
+    menuIcon.classList.toggle("menu-mob-icon");
+    menuIcon.classList.toggle("menu-mob-closed-icon");
+  };
 
   return (
     <Seo title={title} keywords={keywords} description={description}>
@@ -43,10 +46,16 @@ const Test = () => {
             Contact
           </li>
         </ul>
-        <div className="flex flex--jc--center flex--ai--center box-px-50 bg-black mouse-hand br-all-1 br-px-rad-10 br-color-primary br-style-dashed pt3 pb3 pl1 pr1 show-flex-in-sm-xsm" onClick = {menuToggleHandler}>
-          <div className="menu-mob-icon"></div>
+        <div
+          className="flex flex--jc--center flex--ai--center box-px-50 bg-black mouse-hand br-all-1 br-px-rad-10 br-color-primary br-style-dashed pt3 pb3 pl1 pr1 show-flex-in-sm-xsm"
+          onClick={menuToggleHandler}
+        >
+          <div id = "menu-mob-icon" className="menu-mob-icon"></div>
         </div>
-        <div id = "menu-mob-list" className="pos-abs pos-abs--rb w-per-60 bg-black p2 op-70 menu-mob-hr show-block-in-sm-xsm">
+        <div
+          id="menu-mob-list"
+          className="pos-abs pos-abs--rb w-per-60 bg-black p2 op-70 menu-mob-hr show-block-in-sm-xsm"
+        >
           <ul className="flex flex--ai--center flex--dir--col flex--jc--center">
             <li className="w-per-100 text-center br-all-1 br-px-rad-10 my1 pl1 pr1 pt2 pb2 bg-cyan hover-text-secondary hover-bg-primary mouse-hand">
               Home

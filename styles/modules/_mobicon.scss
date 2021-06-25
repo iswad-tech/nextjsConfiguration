@@ -4,6 +4,7 @@
     background-color: $mobIconBgColor;
     display: block;
     border-radius: $mobIconBorderRadius;
+    transition: all ease-in .3s;
 }
 
 .menu-mob-icon {
@@ -27,6 +28,30 @@
     bottom: 0;
     left: 0;
     transform: translateY($mobIconSpace);
+}
+
+.menu-mob-closed-icon {
+    @extend %mob-menu-icon;
+    position: relative;
+    transform: scaleX(1);
+    opacity: 1;
+    background-color: transparent;
+}
+
+.menu-mob-closed-icon::before {
+    content: "";
+    @extend %mob-menu-icon;
+    position: absolute;
+    transform: rotate(-45deg) scaleX(1.25);
+    opacity: 1;
+}
+
+.menu-mob-closed-icon::after {
+    content: "";
+    @extend %mob-menu-icon;
+    position: absolute;
+    transform: rotate(45deg) scaleX(1.25);
+    opacity: 1;
 }
 
 .menu-mob-hr {
