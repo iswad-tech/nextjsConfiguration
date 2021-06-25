@@ -21,7 +21,29 @@
 }
 
 @each $radius in $borderRadius {
-    .br-radius-#{$radius} {
+    .br-px-rad-#{$radius} {
         border-radius: $radius px;
     }
+}
+
+@each $radius in $borderPercentRadius {
+    .br-per-rad-#{$radius} {
+        border-radius: percentage(math.div($radius, 100));
+    }
+}
+
+.br-color-primary {
+    border-color: $primaryColor;
+}
+
+.br-color-secondary {
+    border-color: $secondaryColor;
+}
+
+.br-color-third {
+    border-color: $thirdColor;
+}
+
+.br-color-fourth {
+    border-color: $fourthColor;
 }

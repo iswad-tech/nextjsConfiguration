@@ -20,8 +20,8 @@ const Test = () => {
     <Seo title={title} keywords={keywords} description={description}>
       {appState.isLoading && <h1>Loading ...</h1>}
       <div className="row bg-cyan">
-          <div className="row--12 row--sm--10 row--md--8 row--lg--6 bg-blue box-oneThird text-red p4 text-center">First Div</div>
-          <div className="row--12 row--sm--2 row--md--4 row--lg--6 bg-red box-twoThird text-blue p4 text-rtl">Second Div</div>
+          <div className="row--12 row--sm--10 row--md--8 row--lg--6 bg-blue box-vh-oneThird text-red p4 text-center">First Div</div>
+          <div className="row--12 row--sm--2 row--md--4 row--lg--6 bg-red box-vh-twoThird text-blue p4 text-rtl">Second Div</div>
       </div>
     </Seo>
   );

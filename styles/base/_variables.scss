@@ -1,6 +1,8 @@
 // Colors
 $primaryColor: white;
 $secondaryColor: black;
+$thirdColor: black;
+$fourthColor: black;
 $warningColor: red;
 $successColor: green;
 
@@ -11,9 +13,7 @@ $linkBgColor: black;
 $linkHoverBgColor: black;
 
 //Buttons
-$btnPrimaryColor: red;
-$btnSecondaryColor: blue;
-$btnColorHover: black;
+$btnColorHover: #CCC;
 $btnTextColor: black;
 $btnBorderRadius: 10px;
 $btnPadding: 1rem;
@@ -73,14 +73,16 @@ $gridGap: 1rem;
 $spaceamounts: (1, 2, 3, 4, 5, 6, 7, 8);
 
 // Heights
-$boxHeighs: (50, 100, 150, 200, 250, 300, 400, 450, 500);
+$boxHeighs: (0, 50, 100, 150, 200, 250, 300, 400, 450, 500);
 
 // Widths
 $widthPercentages: (0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100);
+$widthPx: (0, 20, 40, 60, 80, 100, 150, 200, 250, 300, 350, 400, 450, 500, 550, 600);
 
 // Borders
 $borderThickness: (1, 2, 3, 4);
 $borderRadius: (5, 10, 15, 20, 25, 30, 35, 40, 45, 50);
+$borderPercentRadius: (0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100);
 
 // Inputs
 $inputPaddingX: 1rem;
@@ -91,3 +93,11 @@ $inputTextColor: black;
 $inputBgColor: white;
 $focusTextColor: black;
 $focusBgColor: white;
+
+// Opacities
+$opacityArray: (0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100);
+
+// Font Sizes
+$fontPxArray: (8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32);
+$fontRemArray: (1, 2, 3, 4, 5, 6, 7, 8);
+$fontWeightArray: (100, 200, 300, 400, 500, 600, 700, 800, 900, 1000);

@@ -22,17 +22,27 @@
     }
 }
 
-.btnPrimary {
+.btn-primary {
     @extend %btn;
-    background-color: $btnPrimaryColor;
+    background-color: $primaryColor;
 }
 
-.btnSecondary {
+.btn-secondary {
     @extend %btn;
-    background-color: $btnSecondaryColor;
+    background-color: $secondaryColor;
 }
 
-.btnLarge {
+.btn-third {
+    @extend %btn;
+    background-color: $thirdColor;
+}
+
+.btn-fourth {
+    @extend %btn;
+    background-color: $fourthColor;
+}
+
+.btn-large {
     width: $btnLarge;
 
     @include atSmall {
@@ -48,7 +58,7 @@
 	}
 }
 
-.btnMedium {
+.btn-medium {
     width: $btnMedium;
 
     @include atSmall {
@@ -64,7 +74,7 @@
 	}
 }
 
-.btnSmall {
+.btn-small {
     width: $btnSmall;
 
     @include atSmall {

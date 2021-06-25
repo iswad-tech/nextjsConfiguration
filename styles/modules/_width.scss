@@ -1,5 +1,11 @@
 @each $val in $widthPercentages {
-    .w-#{$val} {
+    .w-per-#{$val} {
         width: percentage(math.div($val, 100));
+    }
+}
+
+@each $val in $widthPx {
+    .w-px-#{$val} {
+        width: $val px;
     }
 }

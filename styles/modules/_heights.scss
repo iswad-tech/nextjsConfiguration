@@ -1,10 +1,10 @@
 @each $height in $boxHeighs {
-    .box-#{$height} {
+    .box-px-#{$height} {
         height: $height px;
     }
 }
 
-.box {
+.box-vh {
     &-full {
         height: 100vh;
     }
