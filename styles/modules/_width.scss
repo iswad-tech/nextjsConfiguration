@@ -1,0 +1,5 @@
+@each $val in $widthPercentages {
+    .w-#{$val} {
+        width: percentage(math.div($val, 100));
+    }
+}

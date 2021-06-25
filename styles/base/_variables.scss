@@ -1,0 +1,93 @@
+// Colors
+$primaryColor: white;
+$secondaryColor: black;
+$warningColor: red;
+$successColor: green;
+
+// Links
+$linkColor: black;
+$linkHoverColor: black;
+$linkBgColor: black;
+$linkHoverBgColor: black;
+
+//Buttons
+$btnPrimaryColor: red;
+$btnSecondaryColor: blue;
+$btnColorHover: black;
+$btnTextColor: black;
+$btnBorderRadius: 10px;
+$btnPadding: 1rem;
+
+$btnLarge: 200px;
+$btnMedium: 100px;
+$btnSmall: 80px;
+
+$btnSmallSizeLarge: 200px;
+$btnSmallSizeMedium: 100px;
+$btnSmallSizeSmall: 80px;
+
+$btnMediumSizeLarge: 200px;
+$btnMediumSizeMedium: 100px;
+$btnMediumSizeSmall: 80px;
+
+$btnLargeSizeLarge: 200px;
+$btnLargeSizeMedium: 100px;
+$btnLargeSizeSmall: 80px;
+
+// Headings
+$fontHeadingWeight: 300;
+
+$fontH1Size: 1.5rem;
+$fontH1SmallSize: 1.5rem;
+$fontH1MediumSize: 1.5rem;
+$fontH1LargeSize: 1.5rem;
+
+$fontH2Size: 1.5rem;
+$fontH2SmallSize: 1.5rem;
+$fontH2MediumSize: 1.5rem;
+$fontH2LargeSize: 1.5rem;
+
+$fontH3Size: 1.5rem;
+$fontH3SmallSize: 1.5rem;
+$fontH3MediumSize: 1.5rem;
+$fontH3LargeSize: 1.5rem;
+
+// Fonts
+$fontFamily: 'Roboto', 'sans-serif';
+$fontSize: .8rem;
+$fontSmallSize: .8rem;
+$fontMediumSize: 1rem;
+$fontLargeSize: 1rem;
+$fontColor: black;
+
+// Sizes
+$atSmall: 400px;
+$atMedium: 700px;
+$atLarge: 900px;
+$maxContainerWidth: 1200px;
+
+// grid
+$gridGap: 1rem;
+
+// Spacing
+$spaceamounts: (1, 2, 3, 4, 5, 6, 7, 8);
+
+// Heights
+$boxHeighs: (50, 100, 150, 200, 250, 300, 400, 450, 500);
+
+// Widths
+$widthPercentages: (0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100);
+
+// Borders
+$borderThickness: (1, 2, 3, 4);
+$borderRadius: (5, 10, 15, 20, 25, 30, 35, 40, 45, 50);
+
+// Inputs
+$inputPaddingX: 1rem;
+$inputPaddingY: .2rem;
+$inputMarginX: 1rem;
+$inputMarginY: 1rem;
+$inputTextColor: black;
+$inputBgColor: white;
+$focusTextColor: black;
+$focusBgColor: white;

@@ -1,0 +1,27 @@
+@each $thickness in $borderThickness {
+    .br-t-#{$thickness} {
+        border-top: $thickness px;
+    }
+
+    .br-b-#{$thickness} {
+        border-bottom: $thickness px;
+    }
+
+    .br-l-#{$thickness} {
+        border-left: $thickness px;
+    }
+
+    .br-r-#{$thickness} {
+        border-right: $thickness px;
+    }
+
+    .br-all-#{$thickness} {
+        border: $thickness px;
+    }
+}
+
+@each $radius in $borderRadius {
+    .br-radius-#{$radius} {
+        border-radius: $radius px;
+    }
+}
