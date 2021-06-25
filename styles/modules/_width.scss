@@ -6,6 +6,6 @@
 
 @each $val in $widthPx {
     .w-px-#{$val} {
-        width: $val px;
+        width: #{$val}px;
     }
 }

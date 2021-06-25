@@ -26,11 +26,12 @@ Sample: `<div class="text-ltr">Hello</div>`
 `br-(t, b, l, r, all)-(1, 2, 3, 4)` --> Use this classes to define the position and thickness of border <br>
 `br-px-rad-(5, 10, 15, 20, 25, 30, 35, 40, 45, 50)` --> Use this classes to define the border radius in px <br>
 `br-per-rad-(0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100)` --> Use this classes to define the border radius in percentage <br>
-`br-color-(primary, secondary, third, fourth)` --> Use this classes to define the color of borders <br>
+`br-color-(primary, secondary, third, fourth, success, warning)` --> Use this classes to define the color of borders <br>
+`br-style-(double, solid, dashed, double)` --> Use this classes to define the style of borders <br>
 Sample: `<div class="br-all-1 br-px-rad-10 br-color-secondary">`
 
 **3. Buttons** <br>
-`btn-(primary, secondary, third, fourth, large, medium, small)` --> Use `primary`, `secondary`, `third`, and `fourth` to define the background color of buttons. Use `large`, `medium` and `small` to define the size of button. <br>
+`btn-(primary, secondary, third, fourth, success, warning, large, medium, small)` --> Use `primary`, `secondary`, `third`, `fourth`, `success`, and `warning` to define the background color of buttons. Use `large`, `medium` and `small` to define the size of button. <br>
 Sample: `<button class="btn-primary btn-large">` <br>
 **Note:** You can also use our customized classes to define your desired button with the desired size, color, background color, and borders. <br>
 
@@ -41,19 +42,22 @@ Sample: `<div class="text-third bg-green"></div>`
 
 **5. display** <br>
 `flex` <br>
-`flex--jc--(start, center, end)` <br>
+`flex--jc--(start, center, end, betwwen, around, evenly)` <br>
 `flex--ai--(start, center, end)` <br>
 `flex--dir--(row, col)` <br>
 `block` <br>
 `no-display` <br>
-Sample: `<div class="flex flex--jc--center flex--ai--center flex--dir--col">` OR `<div class="no-display"></div>` OR `<div class="block"></div>`
+`show-flex-in-(sm-md-lg, md-lg, lg, md-sm-xsm, sm-xsm, xsm)` <br>
+`show-block-in-(sm-md-lg, md-lg, lg, md-sm-xsm, sm-xsm, xsm)` <br>
+`active-(flex, block)` <br>
+Sample: `<div class="flex flex--jc--center flex--ai--center flex--dir--col">` OR `<div class="no-display"></div>` OR `<div class="block"></div>` <br>
 
 **6. Fonts** <br>
 `fs-px-(8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32)` --> Font size in pixels <br>
-`fs-r-(1, 2, 3, 4, 5, 6, 7, 8)` --> Font size in half rem  
-`fw-(100, 200, 300, 400, 500, 600, 700, 800, 900, 1000)` --> Font weight
-`f-b` --> Bold Text
-`f-i` --> Italic text
+`fs-r-(1, 2, 3, 4, 5, 6, 7, 8)` --> Font size in half rem <br> 
+`fw-(100, 200, 300, 400, 500, 600, 700, 800, 900, 1000)` --> Font weight <br>
+`f-b` --> Bold Text <br>
+`f-i` --> Italic text <br>
 Sample: `<p class="fs-r-2 fw-600 f-i">Something</p>` <br>
 
 **7. Inputs and Forms** <br>
@@ -62,9 +66,9 @@ Sample: `<p class="fs-r-2 fw-600 f-i">Something</p>` <br>
 Sample: `<label class="required">Name</lable><input type="text" class="input"/>` <br>
 
 **7. Heights and Boxes**
-`.box-px-(0, 50, 100, 150, 200, 250, 300, 400, 450, 500)` --> Heights in px <br>
+`.box-px-(0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 125, 150, 175, 200, 250, 300, 350, 400, 450, 500)` --> Heights in px <br>
 `.box-vh-(oneFourth, oneThird, half, twoThird, threeFourth, full)` Heights in vh <br>
-Sample: <div class="box-vh-half">
+Sample: <div class="box-vh-half"> <br>
 
 **8. Hover** <br>
 `hover-text-(primary, secondary, third, fourth)` --> Color text when hovering on an element <br>
@@ -73,21 +77,21 @@ Sample: `<a class="hover-text-third hover-bg-primary"></a>` <br>
 
 **9. Opacity** <br>
 `op-(0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100)` --> Opacity in percentage <br>
-Sample: <img class="op-60">
+Sample: <img class="op-60"> <br>
 
 **10. Position** <br>
 `pos-abs` --> Make the position absolute <br>
 `pos-abs--(lt, rt, center, lb, rb)` --> Define the position of an absolute element <br>
 `pos-rel` --> Make the position relative <br>
-Sample: `<div class="pos-abs pos-abs--lt">`
+Sample: `<div class="pos-abs pos-abs--lt">` <br>
 
 **11. Rows and Columns** <br>
 `row--(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)` --> XS Devices<br>
 `row--sm--(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)` --> Small Devices <br>
 `row--md--(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)` --> Medium Size Devices<br>
 `row--lg--(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)` --> Large Devices<br>
-`grid`
-`grid--cols--(auto, oneFourth, oneThird, oneHalf)`
+`grid` <br>
+`grid--cols--(auto, oneFourth, oneThird, oneHalf)` <br>
 Sample: `<div className="row--12 row--sm--10 row--md--8 row--lg--6 bg-blue box-oneThird text-red p4 text-center">First Div</div>` OR <div class="grid grid--cols--auto"></div> <br>
 
 **12. Margins and Paddings** <br>
@@ -105,9 +109,20 @@ Sample: `<div className="row--12 row--sm--10 row--md--8 row--lg--6 bg-blue box-o
 `pl(1, 2, 3, 4, 5, 6, 7, 8)` <br>
 `py(1, 2, 3, 4, 5, 6, 7, 8)` <br>
 `px(1, 2, 3, 4, 5, 6, 7, 8)` <br>
+`ml-auto` <br>
+`mr-auto` <br>
 
 **13. Widths** <br>
 `w-per-(0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100)` --> Width in percentage <br>
-`w-px-(0, 20, 40, 60, 80, 100, 150, 200, 250, 300, 350, 400, 450, 500, 550, 600)` --> Width in pixels <br>
+`w-px-(0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 125, 150, 175, 200, 250, 300, 350, 400, 450, 500, 550, 600)` --> Width in pixels <br>
+
+**14. Mobile Menu Bar** <br>
+`menu-mob-icon` --> Mobile Menu Icon <br>
+`menu-mob-hr` <br>
+`menu-mob-hr-active` <br>
+
+**15. General Classes** <br>
+`cur-hand` --> Pointer Cursor <br>
+`z-(0, 10, 100, 1000)` --> Z-index classes
 
 - You are all set and enjoy!

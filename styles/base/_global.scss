@@ -14,6 +14,7 @@ body {
 	font-family: $fontFamily;
 	color: $fontColor;
 	font-size: $fontSize;
+	overflow-x: hidden;
 
 	@include atSmall {
 		font-size: $fontSmallSize;
@@ -46,6 +47,8 @@ a:hover {
 
 ul {
 	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 #container {

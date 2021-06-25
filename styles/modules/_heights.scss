@@ -1,6 +1,6 @@
 @each $height in $boxHeighs {
     .box-px-#{$height} {
-        height: $height px;
+        height: #{$height}px;
     }
 }
 

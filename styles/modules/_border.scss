@@ -22,7 +22,7 @@
 
 @each $radius in $borderRadius {
     .br-px-rad-#{$radius} {
-        border-radius: $radius px;
+        border-radius: #{$radius}px;
     }
 }
 
@@ -46,4 +46,28 @@
 
 .br-color-fourth {
     border-color: $fourthColor;
+}
+
+.br-color-success {
+    border-color: $successColor;
+}
+
+.br-color-warning {
+    border-color: $warningColor;
+}
+
+.br-style-dashed {
+    border-style: dashed;
+}
+
+.br-style-dotted {
+    border-style: dotted;
+}
+
+.br-style-double {
+    border-style: double;
+}
+
+.br-style-solid {
+    border-style: solid;
 }

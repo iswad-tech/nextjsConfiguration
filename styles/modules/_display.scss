@@ -13,6 +13,18 @@
         justify-content: center;
     }
 
+    &--jc--between {
+        justify-content: space-between;
+    }
+
+    &--jc--around {
+        justify-content: space-around;
+    }
+
+    &--jc--evenly {
+        justify-content: space-evenly;
+    }
+
     &--ai--start {
         align-items: flex-start;
     }
@@ -40,4 +52,136 @@
 
 .no-display {
     display: none;
+}
+
+.show-flex-in {
+    &-sm-md-lg {
+        display: none;
+
+        @include atSmall {
+            display: flex;
+        }
+
+        @include atMedium {
+            display: flex;
+        }
+
+        @include atLarge {
+            display: flex;
+        }
+    }
+
+    &-md-lg {
+        display: none;
+
+        @include atMedium {
+            display: flex;
+        }
+
+        @include atLarge {
+            display: flex;
+        }
+    }
+
+    &-lg {
+        display: none;
+
+        @include atLarge {
+            display: flex;
+        }
+    }
+
+    &-md-sm-xsm {
+        display: flex;
+
+        @include atLarge {
+            display: none;
+        }
+    }
+
+    &-sm-xsm {
+        display: flex;
+
+        @include atMedium {
+            display: none;
+        }
+    }
+
+    &-xsm {
+        display: flex;
+
+        @include atSmall {
+            display: none;
+        }
+    }
+}
+
+.show-block-in {
+    &-sm-md-lg {
+        display: none;
+
+        @include atSmall {
+            display: block;
+        }
+
+        @include atMedium {
+            display: block;
+        }
+
+        @include atLarge {
+            display: block;
+        }
+    }
+
+    &-md-lg {
+        display: none;
+
+        @include atMedium {
+            display: block;
+        }
+
+        @include atLarge {
+            display: block;
+        }
+    }
+
+    &-lg {
+        display: none;
+
+        @include atLarge {
+            display: block;
+        }
+    }
+
+    &-md-sm-xsm {
+        display: block;
+
+        @include atLarge {
+            display: none;
+        }
+    }
+
+    &-sm-xsm {
+        display: block;
+
+        @include atMedium {
+            display: none;
+        }
+    }
+
+    &-xsm {
+        display: block;
+
+        @include atSmall {
+            display: none;
+        }
+    }
+}
+
+.active-flex {
+    display: flex;
+}
+
+.active-block {
+    display: block;
 }

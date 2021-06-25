@@ -42,6 +42,16 @@
     background-color: $fourthColor;
 }
 
+.btn-success {
+    @extend %btn;
+    background-color: $successColor;
+}
+
+.btn-warning {
+    @extend %btn;
+    background-color: $warningColor;
+}
+
 .btn-large {
     width: $btnLarge;
 

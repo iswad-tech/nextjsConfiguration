@@ -25,10 +25,10 @@ const Layout = ({ title, keywords, description, children }) => {
   const [state, dispatch] = useImmerReducer(appReducer, initialState);
 
   return (
-    <div id="container">
+    <div id="container" className="bg-black">
       <StateContext.Provider value={state}>
         <DispatchContext.Provider value={dispatch}>
-          <p>Header</p>
+          <p className="text-white">Header</p>
           {children}
           <p>Footer</p>
         </DispatchContext.Provider>
