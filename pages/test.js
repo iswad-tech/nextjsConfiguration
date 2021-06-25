@@ -47,7 +47,7 @@ const Test = () => {
           </li>
         </ul>
         <div
-          className="flex flex--jc--center flex--ai--center box-px-50 bg-black mouse-hand br-all-1 br-px-rad-10 br-color-primary br-style-dashed pt3 pb3 pl1 pr1 show-flex-in-sm-xsm"
+          className="flex flex--jc--center flex--ai--center box-px-50 mouse-hand bg-black br-all-1 br-px-rad-10 br-color-primary br-style-dashed pt3 pb3 pl1 pr1 show-flex-in-sm-xsm"
           onClick={menuToggleHandler}
         >
           <div id = "menu-mob-icon" className="menu-mob-icon"></div>
