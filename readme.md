@@ -4,8 +4,18 @@
 - Note: If you would like to update the version of package being used in the package.json; you can change it manually from package.json file and then run npm install or you can take the following steps:
 `npm uninstall react react-dom next immer use-immer`
 `npm install react react-dom next immer use-immer`
-- Add the following to the .gitignore file: <br>
-`next.config.js`
+- In the root directory of app create next.config.js file and write env variables in that <br>
+`module.exports = {` <br>
+    `publicRuntimeConfig: {` <br>
+      `APP_NAME: "SEOBLOG",` <br>
+      `PRODUCTION: false,` <br>
+      `API_DEVELOPMENT: "http://localhost:8000/api",` <br>
+      `API_PRODUCTION: "Production API URL",` <br>
+      `DOMAIN_DEVELOPMENT: "http:localhost:3000",` <br>
+      `DOMAIN_PRODUCTION: "http:localhost:3000",` <br>
+      `FB_APP_ID: "123456789",` <br>
+    `},` <br>
+`};` <br>
 - You need to change Seo.defaultProps in your Seo.js file inside components folder based on your project
 - You may need to change the global states in your Layout.js file inside components folder, based on your project
 - You need to change Header and Footer section in your Layout.js file with your desired Header and Footer contents/components.
