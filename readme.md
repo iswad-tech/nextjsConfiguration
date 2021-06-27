@@ -23,6 +23,9 @@
 - inside pages/index.js you need to cange the initial values to be passed as props to the Seo component (`title`, `description`, `keywords`)
 - You may want to add more seo tags to your Seo.js component or you can add more Seo tags at your desired page
 - You can create more pages with the initial same configuration as we have for our index.js
+- Auth files are used for user registration/login/signout and they must be used with our NodeJs configuration. The `isAuth()` function is used to determine if user has been authenticated. Moreover, you can use `isAuth().role` to see whether or not the authenticated user is admin.
+- The following npm packages are used for authentication. If you do not need authentication configuration in your application you can uninstall them. <br>
+`react-google-login jsonwebtoken js-cookie` 
 <hr>
 
 ## CSS Classes
