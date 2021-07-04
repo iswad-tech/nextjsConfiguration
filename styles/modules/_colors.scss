@@ -1,117 +1,139 @@
-.text-black {
-    color: black;
-}
-.bg-black {
-    background-color: black;
-}
-
-.text-white {
-    color: white;
-}
-.bg-white {
-    background-color: white;
-}
-
-.text-red {
-    color: red;
-}
-.bg-red {
-    background-color: red;
-}
-
-.text-blue {
-    color: blue;
-}
-.bg-blue {
-    background-color: blue;
-}
-
-.text-orange {
-    color: orange;
-}
-.bg-orange {
-    background-color: orange;
-}
-
-.text-green {
-    color: green;
-}
-.bg-green {
-    background-color: green;
-}
-
-.text-yellow {
-    color: yellow;
-}
-.bg-yellow {
-    background-color: yellow;
-}
-
-.text-pink {
-    color: pink;
-}
-.bg-pink {
-    background-color: pink;
-}
-
-.text-purple {
-    color: purple;
-}
-.bg-purple {
-    background-color: purple;
-}
-
-.text-cyan {
-    color: cyan;
-}
-.bg-cyan {
-    background-color: cyan;
-}
-
-.text-primary {
+.text {
+  &Primary {
     color: $primaryColor;
-}
+  }
 
-.bg-primary {
-    background-color: $primaryColor;
-}
-
-.text-secondary {
+  &Secondary {
     color: $secondaryColor;
-}
+  }
 
-.bg-secondary {
-    background-color: $secondaryColor;
-}
-
-.text-third {
+  &Third {
     color: $thirdColor;
-}
+  }
 
-.bg-third {
-    background-color: $thirdColor;
-}
-
-.text-fourth {
+  &Fourth {
     color: $fourthColor;
-}
+  }
 
-.bg-fourth {
-    background-color: $fourthColor;
-}
-
-.text-warning {
-    color: $warningColor;
-}
-
-.bg-warning {
-    background-color: $warningColor;
-}
-
-.text-success {
+  &Success {
     color: $successColor;
+  }
+
+  &Warning {
+    color: $warningColor;
+  }
+
+  &Red {
+    color: $redColor;
+  }
+
+  &Blue {
+    color: $blueColor;
+  }
+
+  &Black {
+    color: $blackColor;
+  }
+
+  &White {
+    color: $whiteColor;
+  }
+
+  &Orange {
+    color: $orangeColor;
+  }
+
+  &Purple {
+    color: $purpleColor;
+  }
+
+  &Yellow {
+    color: $yellowColor;
+  }
+
+  &Green {
+    color: $greenColor;
+  }
+
+  &Pink {
+    color: $pinkColor;
+  }
+
+  &Cyan {
+    color: $cyanColor;
+  }
+
+  &Silver {
+    color: $silverColor;
+  }
 }
 
-.bg-success {
+.bg {
+  &Primary {
+    background-color: $primaryColor;
+  }
+
+  &Secondary {
+    background-color: $secondaryColor;
+  }
+
+  &Third {
+    background-color: $thirdColor;
+  }
+
+  &Fourth {
+    background-color: $fourthColor;
+  }
+
+  &Success {
     background-color: $successColor;
+  }
+
+  &Warning {
+    background-color: $warningColor;
+  }
+
+  &Red {
+    background-color: $redColor;
+  }
+
+  &Blue {
+    background-color: $blueColor;
+  }
+
+  &Black {
+    background-color: $blackColor;
+  }
+
+  &White {
+    background-color: $whiteColor;
+  }
+
+  &Orange {
+    background-color: $orangeColor;
+  }
+
+  &Purple {
+    background-color: $purpleColor;
+  }
+
+  &Yellow {
+    background-color: $yellowColor;
+  }
+
+  &Green {
+    background-color: $greenColor;
+  }
+
+  &Pink {
+    background-color: $pinkColor;
+  }
+
+  &Cyan {
+    background-color: $cyanColor;
+  }
+
+  &Silver {
+    background-color: $silverColor;
+  }
 }

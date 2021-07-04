@@ -1,21 +1,22 @@
 # Setup a nextjs application
+
 - Clone the repository
 - npm install
 - Note: If you would like to update the version of package being used in the package.json; you can change it manually from package.json file and then run npm install or you can take the following steps:
-`npm uninstall react react-dom next immer use-immer`
-`npm install react react-dom next immer use-immer`
+  `npm uninstall react react-dom next immer use-immer`
+  `npm install react react-dom next immer use-immer`
 - In the root directory of app create next.config.js file and write env variables in that <br>
-`module.exports = {` <br>
-    `publicRuntimeConfig: {` <br>
-      `APP_NAME: "SEOBLOG",` <br>
-      `PRODUCTION: false,` <br>
-      `API_DEVELOPMENT: "http://localhost:8000/api",` <br>
-      `API_PRODUCTION: "Production API URL",` <br>
-      `DOMAIN_DEVELOPMENT: "http:localhost:3000",` <br>
-      `DOMAIN_PRODUCTION: "http:localhost:3000",` <br>
-      `FB_APP_ID: "123456789",` <br>
-    `},` <br>
-`};` <br>
+  `module.exports = {` <br>
+  `publicRuntimeConfig: {` <br>
+  `APP_NAME: "SEOBLOG",` <br>
+  `PRODUCTION: false,` <br>
+  `API_DEVELOPMENT: "http://localhost:8000/api",` <br>
+  `API_PRODUCTION: "Production API URL",` <br>
+  `DOMAIN_DEVELOPMENT: "http:localhost:3000",` <br>
+  `DOMAIN_PRODUCTION: "http:localhost:3000",` <br>
+  `FB_APP_ID: "123456789",` <br>
+  `},` <br>
+  `};` <br>
 - You need to change Seo.defaultProps in your Seo.js file inside components folder based on your project
 - You may need to change the global states in your Layout.js file inside components folder, based on your project
 - You need to change Header and Footer section in your Layout.js file with your desired Header and Footer contents/components.
@@ -25,15 +26,16 @@
 - You can create more pages with the initial same configuration as we have for our index.js
 - Auth files are used for user registration/login/signout and they must be used with our NodeJs configuration. The `isAuth()` function is used to determine if user has been authenticated. Moreover, you can use `isAuth().role` to see whether or not the authenticated user is admin.
 - The following npm packages are used for authentication. If you do not need authentication configuration in your application you can uninstall them. <br>
-`react-google-login jsonwebtoken js-cookie` 
+`react-google-login jsonwebtoken js-cookie`
 <hr>
 
 ## CSS Classes
+
 The following CSS classes are available to be used with this template: <br>
 
 **1. Alignments** <br>
-`text-ltr` --> Align: left to right<br> 
-`text-rtl` --> Align: right to left <br> 
+`text-ltr` --> Align: left to right<br>
+`text-rtl` --> Align: right to left <br>
 `text-center` --> Align: center<br>
 Sample: `<div class="text-ltr">Hello</div>`
 
@@ -51,8 +53,8 @@ Sample: `<button class="btn-primary btn-large">` <br>
 **Note:** You can also use our customized classes to define your desired button with the desired size, color, background color, and borders. <br>
 
 **4. Colors** <br>
-`text-(black, white, red, blue, orange, green, yellow, pink, purple, cyan, primary, secondary, third, fourth, warning, success)` --> Use this classes to define the text color of an element <br>
-`bg-(black, white, red, blue, orange, green, yellow, pink, purple, cyan, primary, secondary, third, fourth, warning, success)` --> Use this classes to define background color of an element<br>
+`text(Primary, Secondary, Third, Fourth, Success, Warning, Blue, Red, Black, White, Orange, Purple, Yellow, Green, Pink, Cyan, Silver)` --> Use this classes to define the text color of an element <br>
+`bg(Primary, Secondary, Third, Fourth, Success, Warning, Blue, Red, Black, White, Orange, Purple, Yellow, Green, Pink, Cyan, Silver)` --> Use this classes to define background color of an element<br>
 Sample: `<div class="text-third bg-green"></div>`
 
 **5. display** <br>
@@ -69,7 +71,7 @@ Sample: `<div class="flex flex--jc--center flex--ai--center flex--dir--col">` OR
 
 **6. Fonts** <br>
 `fs-px-(8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32)` --> Font size in pixels <br>
-`fs-r-(1, 2, 3, 4, 5, 6, 7, 8)` --> Font size in half rem <br> 
+`fs-r-(1, 2, 3, 4, 5, 6, 7, 8)` --> Font size in half rem <br>
 `fw-(100, 200, 300, 400, 500, 600, 700, 800, 900, 1000)` --> Font weight <br>
 `f-b` --> Bold Text <br>
 `f-i` --> Italic text <br>
@@ -138,7 +140,7 @@ Sample: `<div className="row--12 row--sm--10 row--md--8 row--lg--6 bg-blue box-o
 `menu-mob-hr-active` <br>
 
 **15. General Classes** <br>
-`cur-hand` --> Pointer Cursor <br>
+`mouse-hand` --> Pointer Cursor <br>
 `z-(0, 10, 100, 1000)` --> Z-index classes
 
 - You are all set and enjoy!
