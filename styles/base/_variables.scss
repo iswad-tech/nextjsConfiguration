@@ -1,10 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 // Colors
-$primaryColor: white;
-$secondaryColor: black;
-$thirdColor: black;
-$fourthColor: black;
-$warningColor: red;
-$successColor: green;
+$primaryColor: #9effb8;
+$secondaryColor: #03fe4e;
+$thirdColor: #ffff00;
+$fourthColor: dodgerblue;
+$warningColor: #f76666;
+$successColor: #30aa30;
 $redColor: red;
 $blueColor: blue;
 $blackColor: black;
@@ -48,10 +49,10 @@ $btnLargeSizeSmall: 80px;
 // Headings
 $fontHeadingWeight: 300;
 
-$fontH1Size: 1.5rem;
-$fontH1SmallSize: 1.5rem;
-$fontH1MediumSize: 1.5rem;
-$fontH1LargeSize: 1.5rem;
+$fontH1Size: 2rem;
+$fontH1SmallSize: 2rem;
+$fontH1MediumSize: 2rem;
+$fontH1LargeSize: 2.5rem;
 
 $fontH2Size: 1.5rem;
 $fontH2SmallSize: 1.5rem;
@@ -65,17 +66,17 @@ $fontH3LargeSize: 1.5rem;
 
 // Fonts
 $fontFamily: "Roboto", "sans-serif";
-$fontSize: 0.8rem;
-$fontSmallSize: 0.8rem;
+$fontSize: 0.9rem;
+$fontSmallSize: 0.9rem;
 $fontMediumSize: 1rem;
 $fontLargeSize: 1rem;
 $fontColor: black;
 
 // Sizes
 $atSmall: 400px;
-$atMedium: 700px;
-$atLarge: 900px;
-$maxContainerWidth: 1200px;
+$atMedium: 800px;
+$atLarge: 1200px;
+$maxContainerWidth: 1366px;
 
 // grid
 $gridGap: 1rem;
@@ -162,6 +163,6 @@ $fontWeightArray: (100, 200, 300, 400, 500, 600, 700, 800, 900, 1000);
 // MenuIcon
 $mobIconWidth: 50px;
 $mobIconHeight: 5px;
-$mobIconBgColor: white;
+$mobIconBgColor: black;
 $mobIconSpace: 12.5px;
 $mobIconBorderRadius: 5px;

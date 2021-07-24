@@ -43,7 +43,7 @@ Sample: `<div class="text-ltr">Hello</div>`
 `br-(t, b, l, r, all)-(1, 2, 3, 4)` --> Use this classes to define the position and thickness of border <br>
 `br-px-rad-(5, 10, 15, 20, 25, 30, 35, 40, 45, 50)` --> Use this classes to define the border radius in px <br>
 `br-per-rad-(0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100)` --> Use this classes to define the border radius in percentage <br>
-`br-color-(primary, secondary, third, fourth, success, warning)` --> Use this classes to define the color of borders <br>
+`br-color-(primary, secondary, third, fourth, success, warning, red, blue, black, white, orange, purple, yellow, green, pink, cyan, silver)` --> Use this classes to define the color of borders <br>
 `br-style-(double, solid, dashed, double)` --> Use this classes to define the style of borders <br>
 Sample: `<div class="br-all-1 br-px-rad-10 br-color-secondary">`
 
@@ -62,6 +62,7 @@ Sample: `<div class="text-third bg-green"></div>`
 `flex--jc--(start, center, end, betwwen, around, evenly)` <br>
 `flex--ai--(start, center, end)` <br>
 `flex--dir--(row, col)` <br>
+`flex--wrap` <br>
 `block` <br>
 `no-display` <br>
 `show-flex-in-(sm-md-lg, md-lg, lg, md-sm-xsm, sm-xsm, xsm)` <br>
@@ -83,13 +84,15 @@ Sample: `<p class="fs-r-2 fw-600 f-i">Something</p>` <br>
 Sample: `<label class="required">Name</lable><input type="text" class="input"/>` <br>
 
 **7. Heights and Boxes**
+`.box-min-px-(0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 125, 150, 175, 200, 250, 300, 350, 400, 450, 500)` --> Heights in px <br>
+`.box-min-vh-(oneFourth, oneThird, half, twoThird, threeFourth, full)` Heights in vh <br>
 `.box-px-(0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 125, 150, 175, 200, 250, 300, 350, 400, 450, 500)` --> Heights in px <br>
 `.box-vh-(oneFourth, oneThird, half, twoThird, threeFourth, full)` Heights in vh <br>
 Sample: <div class="box-vh-half"> <br>
 
 **8. Hover** <br>
-`hover-text-(primary, secondary, third, fourth)` --> Color text when hovering on an element <br>
-`hover-bg-(primary, secondary, third, fourth)` --> Background color when hovering on an element <br>
+`hover-text-(primary, secondary, third, fourth, red, blue, black, white, orange, purple, yellow, green, pink, cyan, silver)` --> Color text when hovering on an element <br>
+`hover-bg-(primary, secondary, third, fourth, red, blue, black, white, orange, purple, yellow, green, pink, cyan, silver)` --> Background color when hovering on an element <br>
 Sample: `<a class="hover-text-third hover-bg-primary"></a>` <br>
 
 **9. Opacity** <br>
@@ -99,6 +102,8 @@ Sample: <img class="op-60"> <br>
 **10. Position** <br>
 `pos-abs` --> Make the position absolute <br>
 `pos-abs--(lt, rt, center, lb, rb)` --> Define the position of an absolute element <br>
+`pos-fix` --> Make the position fixed <br>
+`pos-fix--(lt, rt, center, lb, rb)` --> Define the position of a fixed element <br>
 `pos-rel` --> Make the position relative <br>
 Sample: `<div class="pos-abs pos-abs--lt">` <br>
 
@@ -142,5 +147,9 @@ Sample: `<div className="row--12 row--sm--10 row--md--8 row--lg--6 bg-blue box-o
 **15. General Classes** <br>
 `mouse-hand` --> Pointer Cursor <br>
 `z-(0, 10, 100, 1000)` --> Z-index classes
+`footer` --> Sticky footer at the bottom of the page
+`f-(left, right)` --> Float left or right
+
+## Deployment on Linux Server
 
 - You are all set and enjoy!

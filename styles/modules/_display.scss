@@ -1,187 +1,191 @@
 .flex {
-    display: flex;
+  display: flex;
 
-    &--jc--start {
-        justify-content: flex-start;
-    }
+  &--jc--start {
+    justify-content: flex-start;
+  }
 
-    &--jc--end {
-        justify-content: flex-end;
-    }
+  &--jc--end {
+    justify-content: flex-end;
+  }
 
-    &--jc--center {
-        justify-content: center;
-    }
+  &--jc--center {
+    justify-content: center;
+  }
 
-    &--jc--between {
-        justify-content: space-between;
-    }
+  &--jc--between {
+    justify-content: space-between;
+  }
 
-    &--jc--around {
-        justify-content: space-around;
-    }
+  &--jc--around {
+    justify-content: space-around;
+  }
 
-    &--jc--evenly {
-        justify-content: space-evenly;
-    }
+  &--jc--evenly {
+    justify-content: space-evenly;
+  }
 
-    &--ai--start {
-        align-items: flex-start;
-    }
+  &--ai--start {
+    align-items: flex-start;
+  }
 
-    &--ai--end {
-        align-items: flex-end;
-    }
+  &--ai--end {
+    align-items: flex-end;
+  }
 
-    &--ai--center {
-        align-items: center;
-    }
+  &--ai--center {
+    align-items: center;
+  }
 
-    &--dir--row {
-        flex-direction: row;
-    }
+  &--dir--row {
+    flex-direction: row;
+  }
 
-    &--dir--col {
-        flex-direction: column;
-    }
+  &--dir--col {
+    flex-direction: column;
+  }
+
+  &--wrap {
+    flex-wrap: wrap;
+  }
 }
 
 .block {
-    display: block;
+  display: block;
 }
 
 .no-display {
-    display: none;
+  display: none;
 }
 
 .show-flex-in {
-    &-sm-md-lg {
-        display: none;
+  &-sm-md-lg {
+    display: none;
 
-        @include atSmall {
-            display: flex;
-        }
-
-        @include atMedium {
-            display: flex;
-        }
-
-        @include atLarge {
-            display: flex;
-        }
+    @include atSmall {
+      display: flex;
     }
 
-    &-md-lg {
-        display: none;
-
-        @include atMedium {
-            display: flex;
-        }
-
-        @include atLarge {
-            display: flex;
-        }
+    @include atMedium {
+      display: flex;
     }
 
-    &-lg {
-        display: none;
+    @include atLarge {
+      display: flex;
+    }
+  }
 
-        @include atLarge {
-            display: flex;
-        }
+  &-md-lg {
+    display: none;
+
+    @include atMedium {
+      display: flex;
     }
 
-    &-md-sm-xsm {
-        display: flex;
-
-        @include atLarge {
-            display: none;
-        }
+    @include atLarge {
+      display: flex;
     }
+  }
 
-    &-sm-xsm {
-        display: flex;
+  &-lg {
+    display: none;
 
-        @include atMedium {
-            display: none;
-        }
+    @include atLarge {
+      display: flex;
     }
+  }
 
-    &-xsm {
-        display: flex;
+  &-md-sm-xsm {
+    display: flex;
 
-        @include atSmall {
-            display: none;
-        }
+    @include atLarge {
+      display: none;
     }
+  }
+
+  &-sm-xsm {
+    display: flex;
+
+    @include atMedium {
+      display: none;
+    }
+  }
+
+  &-xsm {
+    display: flex;
+
+    @include atSmall {
+      display: none;
+    }
+  }
 }
 
 .show-block-in {
-    &-sm-md-lg {
-        display: none;
+  &-sm-md-lg {
+    display: none;
 
-        @include atSmall {
-            display: block;
-        }
-
-        @include atMedium {
-            display: block;
-        }
-
-        @include atLarge {
-            display: block;
-        }
+    @include atSmall {
+      display: block;
     }
 
-    &-md-lg {
-        display: none;
-
-        @include atMedium {
-            display: block;
-        }
-
-        @include atLarge {
-            display: block;
-        }
+    @include atMedium {
+      display: block;
     }
 
-    &-lg {
-        display: none;
+    @include atLarge {
+      display: block;
+    }
+  }
 
-        @include atLarge {
-            display: block;
-        }
+  &-md-lg {
+    display: none;
+
+    @include atMedium {
+      display: block;
     }
 
-    &-md-sm-xsm {
-        display: block;
-
-        @include atLarge {
-            display: none;
-        }
+    @include atLarge {
+      display: block;
     }
+  }
 
-    &-sm-xsm {
-        display: block;
+  &-lg {
+    display: none;
 
-        @include atMedium {
-            display: none;
-        }
+    @include atLarge {
+      display: block;
     }
+  }
 
-    &-xsm {
-        display: block;
+  &-md-sm-xsm {
+    display: block;
 
-        @include atSmall {
-            display: none;
-        }
+    @include atLarge {
+      display: none;
     }
+  }
+
+  &-sm-xsm {
+    display: block;
+
+    @include atMedium {
+      display: none;
+    }
+  }
+
+  &-xsm {
+    display: block;
+
+    @include atSmall {
+      display: none;
+    }
+  }
 }
 
 .active-flex {
-    display: flex;
+  display: flex;
 }
 
 .active-block {
-    display: block;
+  display: block;
 }

@@ -1,31 +1,63 @@
 @each $height in $boxHeighs {
-    .box-px-#{$height} {
-        height: #{$height}px;
-    }
+  .box-min-px-#{$height} {
+    min-height: #{$height}px;
+  }
+}
+
+@each $height in $boxHeighs {
+  .box-px-#{$height} {
+    height: #{$height}px;
+  }
+}
+
+.box-min-vh {
+  &-full {
+    min-height: 100vh;
+  }
+
+  &-half {
+    min-height: 50vh;
+  }
+
+  &-oneFourth {
+    min-height: 25vh;
+  }
+
+  &-threeFourth {
+    min-height: 75vh;
+  }
+
+  &-oneThird {
+    min-height: 33.33333333vh;
+  }
+
+  &-twoThird {
+    min-height: 66.66666666vh;
+  }
 }
 
 .box-vh {
-    &-full {
-        height: 100vh;
-    }
+  &-full {
+    height: 100vh;
+  }
 
-    &-half {
-        height: 50vh;
-    }
+  &-half {
+    height: 50vh;
+  }
 
-    &-oneFourth {
-        height: 25vh;
-    }
+  &-oneFourth {
+    height: 25vh;
+  }
 
-    &-threeFourth {
-        height: 75vh;
-    }
+  &-threeFourth {
+    height: 75vh;
+  }
 
-    &-oneThird {
-        height: 33.33333333vh;
-    }
+  &-oneThird {
+    height: 33.33333333vh;
+  }
 
-    &-twoThird {
-        height: 66.66666666vh;
-    }
+  &-twoThird {
+    height: 66.66666666vh;
+  }
 }

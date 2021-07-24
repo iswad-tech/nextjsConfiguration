@@ -1,58 +1,67 @@
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 * {
-	-moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-	font-family: $fontFamily;
-	color: $fontColor;
-	font-size: $fontSize;
-	overflow-x: hidden;
+  font-family: $fontFamily;
+  color: $fontColor;
+  font-size: $fontSize;
+  overflow-x: hidden;
 
-	@include atSmall {
-		font-size: $fontSmallSize;
-	}
+  @include atSmall {
+    font-size: $fontSmallSize;
+  }
 
-	@include atMedium {
-		font-size: $fontMediumSize;
-	}
+  @include atMedium {
+    font-size: $fontMediumSize;
+  }
 
-	@include atLarge {
-		font-size: $fontLargeSize;
-	}
+  @include atLarge {
+    font-size: $fontLargeSize;
+  }
 }
 
 img {
-	max-width: 100%;
-	height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 a {
-	text-decoration: none;
-    color: $linkColor;
-    background-color: $linkBgColor;
+  text-decoration: none;
+  color: $linkColor;
+  background-color: $linkBgColor;
 }
 
 a:hover {
-    color: $linkHoverColor;
-    background-color: $linkHoverBgColor;
+  color: $linkHoverColor;
+  background-color: $linkHoverBgColor;
 }
 
 ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 #container {
-	width: 100%;
-	max-width: $maxContainerWidth;
-	margin: 0 auto;
+  width: 100%;
+  max-width: $maxContainerWidth;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  position: relative;
+}
+
+.footer {
+  flex-shrink: 0;
 }

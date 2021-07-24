@@ -1,73 +1,117 @@
 @each $thickness in $borderThickness {
-    .br-t-#{$thickness} {
-        border-top: $thickness px;
-    }
+  .br-t-#{$thickness} {
+    border-top: #{$thickness}px;
+  }
 
-    .br-b-#{$thickness} {
-        border-bottom: $thickness px;
-    }
+  .br-b-#{$thickness} {
+    border-bottom: #{$thickness}px;
+  }
 
-    .br-l-#{$thickness} {
-        border-left: $thickness px;
-    }
+  .br-l-#{$thickness} {
+    border-left: #{$thickness}px;
+  }
 
-    .br-r-#{$thickness} {
-        border-right: $thickness px;
-    }
+  .br-r-#{$thickness} {
+    border-right: #{$thickness}px;
+  }
 
-    .br-all-#{$thickness} {
-        border: $thickness px;
-    }
+  .br-all-#{$thickness} {
+    border: #{$thickness}px;
+  }
 }
 
 @each $radius in $borderRadius {
-    .br-px-rad-#{$radius} {
-        border-radius: #{$radius}px;
-    }
+  .br-px-rad-#{$radius} {
+    border-radius: #{$radius}px;
+  }
 }
 
 @each $radius in $borderPercentRadius {
-    .br-per-rad-#{$radius} {
-        border-radius: percentage(math.div($radius, 100));
-    }
+  .br-per-rad-#{$radius} {
+    border-radius: percentage(math.div($radius, 100));
+  }
 }
 
 .br-color-primary {
-    border-color: $primaryColor;
+  border-color: $primaryColor;
 }
 
 .br-color-secondary {
-    border-color: $secondaryColor;
+  border-color: $secondaryColor;
 }
 
 .br-color-third {
-    border-color: $thirdColor;
+  border-color: $thirdColor;
 }
 
 .br-color-fourth {
-    border-color: $fourthColor;
+  border-color: $fourthColor;
 }
 
 .br-color-success {
-    border-color: $successColor;
+  border-color: $successColor;
 }
 
 .br-color-warning {
-    border-color: $warningColor;
+  border-color: $warningColor;
+}
+
+.br-color-red {
+  border-color: $redColor;
+}
+
+.br-color-blue {
+  border-color: $blueColor;
+}
+
+.br-color-black {
+  border-color: $blackColor;
+}
+
+.br-color-white {
+  border-color: $whiteColor;
+}
+
+.br-color-orange {
+  border-color: $orangeColor;
+}
+
+.br-color-purple {
+  border-color: $purpleColor;
+}
+
+.br-color-yellow {
+  border-color: $yellowColor;
+}
+
+.br-color-green {
+  border-color: $greenColor;
+}
+
+.br-color-pink {
+  border-color: $pinkColor;
+}
+
+.br-color-cyan {
+  border-color: $cyanColor;
+}
+
+.br-color-silver {
+  border-color: $silverColor;
 }
 
 .br-style-dashed {
-    border-style: dashed;
+  border-style: dashed;
 }
 
 .br-style-dotted {
-    border-style: dotted;
+  border-style: dotted;
 }
 
 .br-style-double {
-    border-style: double;
+  border-style: double;
 }
 
 .br-style-solid {
-    border-style: solid;
+  border-style: solid;
 }
