@@ -1,7 +1,5 @@
 import React from "react";
 
-import Logo from "./Logo";
-
 const menuItems = ["Contact Us", "About App"];
 
 const Header = () => {
@@ -16,7 +14,7 @@ const Header = () => {
   return (
     <div className="w-per-100 flex flex--jc--between flex--ai--center header p2 pos-rel">
       <div className="flex flex--jc--center flex--ai--center mouse-hand">
-        <Logo />
+        <div className="box-px-100 w-px-100 br-rad-per-50"></div>
       </div>
       <ul className="flex flex--jc--start show-flex-in-md-lg">
         {menuItems.map((menu, idx) => (

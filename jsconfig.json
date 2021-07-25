@@ -16,6 +16,9 @@
             ],
             "@/context/*": [
                 "context/*"
+            ],
+            "@/assets/*": [
+                "assets/*"
             ]
         }
     }

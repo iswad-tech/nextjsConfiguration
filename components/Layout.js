@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import { CSSTransition } from "react-transition-group";
 
 import StateContext from "@/context/StateContext";
 
