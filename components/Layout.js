@@ -1,38 +1,32 @@
-import React from "react";
-import Head from "next/head";
-import { useImmerReducer } from "use-immer";
+import React, { useContext } from "react";
+import { CSSTransition } from "react-transition-group";
 
 import StateContext from "@/context/StateContext";
-import DispatchContext from "@/context/DispatchContext";
 
-const Layout = ({ title, keywords, description, children }) => {
-  const initialState = {
-    isLoading: false,
-  };
+import Header from "./Header";
+import Footer from "./Footer";
+import Loading from "./Loading";
+import Alert from "./Alert";
 
-  const appReducer = (draft, action) => {
-    switch (action.type) {
-      case "loadingOn":
-        draft.isLoading = true;
-        break;
-
-      case "loadingOff":
-        draft.isLoading = false;
-        break;
-    }
-  };
-
-  const [state, dispatch] = useImmerReducer(appReducer, initialState);
+const Layout = ({ children, header = true, footer = true }) => {
+  const appState = useContext(StateContext);
 
   return (
-    <div id="container" className="bgBlack">
-      <StateContext.Provider value={state}>
-        <DispatchContext.Provider value={dispatch}>
-          <p className="textWhite">Header</p>
-          {children}
-          <p className="textWhite">Footer</p>
-        </DispatchContext.Provider>
-      </StateContext.Provider>
+    <div id="container">
+      {appState.isLoading && <Loading message={appState.loadingMessage} />}
+      <CSSTransition
+        in={appState.alertMessage && appState.alertMessage.length}
+        timeout={0}
+        classNames="alertAnimation"
+        unmountOnExit
+      >
+        <Alert />
+      </CSSTransition>
+      <div>
+        {header && <Header />}
+        {children}
+      </div>
+      {footer && <Footer />}
     </div>
   );
 };
