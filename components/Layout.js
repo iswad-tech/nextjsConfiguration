@@ -14,14 +14,7 @@ const Layout = ({ children, header = true, footer = true }) => {
   return (
     <div id="container">
       {appState.isLoading && <Loading message={appState.loadingMessage} />}
-      <CSSTransition
-        in={appState.alertMessage && appState.alertMessage.length}
-        timeout={0}
-        classNames="alertAnimation"
-        unmountOnExit
-      >
-        <Alert />
-      </CSSTransition>
+      {appState.alertMessage && appState.alertMessage.length ? <Alert /> : ""}
       <div>
         {header && <Header />}
         {children}
