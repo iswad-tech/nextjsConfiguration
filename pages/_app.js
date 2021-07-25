@@ -3,7 +3,6 @@ import { useImmerReducer } from "use-immer";
 
 import StateContext from "@/context/StateContext";
 import DispatchContext from "@/context/DispatchContext";
-import { setLocalStorage } from "@/helpers/functions";
 import "@/styles/styles.scss";
 
 const MyApp = ({ Component, pageProps }) => {
